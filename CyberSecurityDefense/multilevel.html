@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-Level Security (MLS) Simulation</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <h2>Marlon Branham</h2>
+    <a href="../index.html">About Me</a>
+
+    <strong>Cybersecurity Defense</strong>
+    <a href="multilevel.html" class="active">Multi-Level Security</a>
+    <a href="windows-server.html">Windows Server Setup</a>
+    <a href="splunk.html">Splunk Threat Analysis</a>
+    <a href="shell_security.html">Shell Security & Exploits</a>
+    <a href="securityplus.html">Security+ Journey</a>
+    <a href="wireshark.html">Networking with Wireshark</a>
+
+    <strong>Research</strong>
+    <a href="../Research/fingerprint.html">Fingerprint Recognition</a>
+    <a href="../Research/rsa.html">RSA Cryptography</a>
+    <a href="../Research/cellular_automata.html">Cellular Automata</a>
+  </nav>
+
+  <div class="content">
+    <header>
+      <h1>Multi-Level Security (MLS) System Simulation</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Overview</h2>
+        <p>
+          This project simulates a Multi-Level Security system using both Python and C#. It models real-world clearance levels (Public, Limited, Secret, Top Secret) by enforcing access control on 50 files using user roles. A real Windows Server setup was also used to test this model at the system level.
+        </p>
+      </section>
+
+      <section>
+        <h2>Security Model</h2>
+        <p>
+          The system is based on the Bell-LaPadula security model, which restricts read access to data based on security clearance levels. Users can view files that are at or below their clearance level.
+        </p>
+        <ul>
+          <li>Level 1 – Public</li>
+          <li>Level 2 – Limited</li>
+          <li>Level 3 – Secret</li>
+          <li>Level 4 – Top Secret</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Python Simulation</h2>
+        <p>
+          A Python script was created to:
+        </p>
+        <ul>
+          <li>Define users with credentials and security levels</li>
+          <li>Generate 50 files with randomized access levels</li>
+          <li>Authenticate users and display accessible files</li>
+        </ul>
+        <p>This allowed for quick testing of access enforcement logic and user restrictions.</p>
+      </section>
+
+      <section>
+        <h2>C# Console Application</h2>
+        <p>
+          A console-based C# version of the MLS system was developed to mirror the Python implementation while gaining experience with static typing and .NET. This version:
+        </p>
+        <ul>
+          <li>Utilizes lists of User and File objects</li>
+          <li>Handles login and role-based file filtering</li>
+          <li>Supports password-masked input and validation</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Windows Server Demonstration</h2>
+        <p>
+          A full implementation of the MLS model was deployed to a configured Windows Server instance. NTFS file permissions and group policies were used to:
+        </p>
+        <ul>
+          <li>Create user roles and groups mapped to clearance levels</li>
+          <li>Assign file permissions using Access Control Lists (ACLs)</li>
+          <li>Verify real-time enforcement using test logins</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Key Takeaways</h2>
+        <p>
+          This project demonstrates practical understanding of access control models and security enforcement mechanisms across programming and system-level implementations. It highlights how theoretical models can be tested and validated using simulation and live environments.
+        </p>
+      </section>
+
+      <section>
+        <h2>Repository</h2>
+        <p>
+          Code and documentation available on GitHub:
+          <a href="https://github.com/zekebranham/MultiLevelSecurity" target="_blank">github.com/zekebranham/MultiLevelSecurity</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Marlon | Cybersecurity & Research Portfolio</p>
+    </footer>
+  </div>
+</body>
+</html>

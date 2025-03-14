@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Windows Server Security Lab</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <h2>Marlon Branham</h2>
+    <a href="../index.html">About Me</a>
+
+    <strong>Cybersecurity Defense</strong>
+    <a href="multilevel.html">Multi-Level Security</a>
+    <a href="windows-server.html" class="active">Windows Server Setup</a>
+    <a href="splunk.html">Splunk Threat Analysis</a>
+    <a href="shell_security.html">Shell Security & Exploits</a>
+    <a href="securityplus.html">Security+ Journey</a>
+    <a href="wireshark.html">Networking with Wireshark</a>
+
+    <strong>Research</strong>
+    <a href="../Research/fingerprint.html">Fingerprint Recognition</a>
+    <a href="../Research/rsa.html">RSA Cryptography</a>
+    <a href="../Research/cellular_automata.html">Cellular Automata</a>
+  </nav>
+
+  <div class="content">
+    <header>
+      <h1>Windows Server Security Lab</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Overview</h2>
+        <p>
+          This lab explores enterprise-level system configuration using Windows Server. The focus is on implementing real-world administration tasks, user access control, and security policies in a local testbed. These experiments replicate what IT administrators and security analysts handle in production environments.
+        </p>
+      </section>
+
+      <section>
+        <h2>Key Skills Demonstrated</h2>
+        <ul>
+          <li>Initial Server Configuration via SConfig</li>
+          <li>Remote Desktop and static IP setup</li>
+          <li>Active Directory role installation and configuration</li>
+          <li>Group policy application and ACL testing</li>
+          <li>Firewall rule creation and SMB permissions</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Lab Environment</h2>
+        <p>
+          This project was executed using a local VirtualBox VM setup with the following components:
+        </p>
+        <ul>
+          <li><strong>Windows Server 2022</strong> (no desktop experience)</li>
+          <li><strong>Oracle Linux VM</strong> (client system)</li>
+          <li>Remote access enabled for testing RDP security</li>
+          <li>SMB shares configured and mounted via Linux</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Security Features Explored</h2>
+        <ul>
+          <li>Role-based access via Active Directory groups</li>
+          <li>Port-specific inbound/outbound firewall configuration</li>
+          <li>Audit policy configuration to detect unauthorized access</li>
+          <li>SMB protocol inspection and restriction</li>
+          <li>User login verification and restricted folder visibility</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Reflection</h2>
+        <p>
+          Working directly with Windows Server elevated my understanding of domain-based access control, system hardening, and real-time threat prevention. This hands-on experience complements my scripting and programming background by grounding abstract concepts in real system administration tasks.
+        </p>
+      </section>
+
+      <section>
+        <h2>Documentation & Screenshots</h2>
+        <p>
+          Screenshots of setup, user access control panels, and command line logs are available upon request or in the GitHub repository:
+          <a href="https://github.com/zekebranham" target="_blank">github.com/zekebranham</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Marlon Branham | Windows Server Security Lab</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fingerprint Recognition</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <h2>Marlon Branham</h2>
+    <a href="../index.html">About Me</a>
+
+    <strong>Cybersecurity Defense</strong>
+    <a href="../CybersecurityDefense/multilevel.html">Multi-Level Security</a>
+    <a href="../CybersecurityDefense/windows-server.html">Windows Server Setup</a>
+    <a href="../CybersecurityDefense/splunk.html">Splunk Threat Analysis</a>
+    <a href="../CybersecurityDefense/shell_security.html">Shell Security & Exploits</a>
+    <a href="../CybersecurityDefense/securityplus.html">Security+ Journey</a>
+    <a href="../CybersecurityDefense/wireshark.html">Networking with Wireshark</a>
+
+    <strong>Research</strong>
+    <a href="fingerprint.html" class="active">Fingerprint Recognition</a>
+    <a href="rsa.html">RSA Cryptography</a>
+    <a href="cellular_automata.html">Cellular Automata</a>
+  </nav>
+
+  <div class="content">
+    <header>
+      <h1>High-Density Grid-Based Fingerprint Recognition</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Project Summary</h2>
+        <p>
+          This research project proposes a fingerprint recognition algorithm that improves speed and security using a novel High-Density Grid-Based Matching technique. Rather than storing the full fingerprint image, the system focuses on small, data-rich segments of the fingerprint to minimize risk and optimize efficiency.
+        </p>
+      </section>
+
+      <section>
+        <h2>Key Highlights</h2>
+        <ul>
+          <li><strong>Storage Efficiency:</strong> Only the top seven 80x80 high-density pixel segments of the fingerprint are stored, greatly reducing biometric data exposure.</li>
+          <li><strong>Improved Security:</strong> Selective data storage limits risk if database compromise occurs.</li>
+          <li><strong>Performance Gains:</strong> Testing showed 20–30% faster recognition by focusing on regions with high minutiae density.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Visuals</h2>
+        <div class="image-grid">
+          <img src="../assets/ProcessingTimesFP.png" alt="Grid-Based Fingerprint Segmentation" />
+          <img src="../assets/FPChart.png" alt="High-Density Grids Visualization" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Research Paper</h2>
+        <p>
+          The paper, titled <em>High-Density Grid-Based Matching Versus Global Matching</em>, was formatted in IEEE style and outlines the methods, evaluations, and improvements proposed by the new algorithm.
+        </p>
+        <p><a href="../assets/High-Density-Grid-Based-Matching IEEE.pdf" target="_blank">View Research Paper (PDF)</a></p>
+      </section>
+
+      <section>
+        <h2>Repository</h2>
+        <p>
+          <a href="https://github.com/zekebranham/High-Density-Grid-Based-Fingerprint-Matching" target="_blank">
+            View Source Code on GitHub
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Marlon Branham | Research & Innovation</p>
+    </footer>
+  </div>
+</body>
+</html>

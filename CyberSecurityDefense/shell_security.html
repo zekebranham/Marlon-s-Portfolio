@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shell Security & Exploits</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <h2>Marlon Branham</h2>
+    <a href="../index.html">About Me</a>
+
+    <strong>Cybersecurity Defense</strong>
+    <a href="multilevel.html">Multi-Level Security</a>
+    <a href="windows-server.html">Windows Server Setup</a>
+    <a href="splunk.html">Splunk Threat Analysis</a>
+    <a href="shell_security.html" class="active">Shell Security & Exploits</a>
+    <a href="securityplus.html">Security+ Journey</a>
+    <a href="wireshark.html">Networking with Wireshark</a>
+
+    <strong>Research</strong>
+    <a href="../Research/fingerprint.html">Fingerprint Recognition</a>
+    <a href="../Research/rsa.html">RSA Cryptography</a>
+    <a href="../Research/cellular_automata.html">Cellular Automata</a>
+  </nav>
+
+  <div class="content">
+    <header>
+      <h1>Shell Security & Exploit Research</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Overview</h2>
+        <p>
+          This section highlights hands-on experiments involving classic and modern shell vulnerabilities, including exploits like Shellshock, XSS, CSRF, and buffer overflows. These projects were completed within a virtualized Linux environment using Oracle VirtualBox.
+        </p>
+        <ul>
+          <li>Shellshock: environment variable injection</li>
+          <li>Cross-Site Request Forgery (CSRF)</li>
+          <li>Cross-Site Scripting (XSS) worm payloads</li>
+          <li>Buffer Overflow analysis and payload crafting</li>
+          <li>Encryption and hashing via shell scripting</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Exploit Research Highlights</h2>
+        <ul>
+          <li><strong>Shellshock Exploit:</strong> Injected Bash functions through HTTP headers to execute arbitrary shell commands.</li>
+          <li><strong>CSRF Protection:</strong> Implemented token and same-site cookie validation strategies.</li>
+          <li><strong>XSS Worm:</strong> Built and tested a JavaScript-based self-replicating worm for educational purposes.</li>
+          <li><strong>Buffer Overflow:</strong> Manually crafted and debugged C payloads to overwrite memory and escalate control.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Documentation</h2>
+        <p>Detailed documentation for each exploit is available in the reports below:</p>
+        <ul>
+          <li><a href="../assets/CSRFxss.pdf" target="_blank">CSRF and XSS Implementation</a></li>
+          <li><a href="../assets/ShellshockBufferOverflow.pdf" target="_blank">Shellshock & Buffer Overflow Report</a></li>
+          <li><a href="../assets/Encryption.pdf" target="_blank">Encryption & Hashing Lab</a></li>
+          <li><a href="../assets/EnvVars.pdf" target="_blank">Linux Shell Environment Variables</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Reflection</h2>
+        <p>
+          These exercises deepened my understanding of system vulnerabilities and secure shell programming practices. I gained valuable insight into how exploits can be discovered, weaponized, and mitigated — vital for any aspiring security analyst.
+        </p>
+      </section>
+
+      <footer>
+        <p>&copy; 2025 Marlon Branham | Shell Security Lab</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RSA Cryptography</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <h2>Marlon Branham</h2>
+    <a href="../index.html">About Me</a>
+
+    <strong>Cybersecurity Defense</strong>
+    <a href="../CybersecurityDefense/multilevel.html">Multi-Level Security</a>
+    <a href="../CybersecurityDefense/windows-server.html">Windows Server Setup</a>
+    <a href="../CybersecurityDefense/splunk.html">Splunk Threat Analysis</a>
+    <a href="../CybersecurityDefense/shell_security.html">Shell Security & Exploits</a>
+    <a href="../CybersecurityDefense/securityplus.html">Security+ Journey</a>
+    <a href="../CybersecurityDefense/wireshark.html">Networking with Wireshark</a>
+
+    <strong>Research</strong>
+    <a href="../Research/fingerprint.html">Fingerprint Recognition</a>
+    <a href="../Research/rsa.html" class="active">RSA Cryptography</a>
+    <a href="../Research/cellular_automata.html">Cellular Automata</a>
+  </nav>
+
+  <div class="content">
+    <header>
+      <h1>RSA Public Key Cryptography Implementation</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Overview</h2>
+        <p>
+          This project is a Python-based RSA encryption and decryption tool created from scratch, designed to demonstrate how public and private key cryptosystems work. It showcases prime number generation, key creation, and message encryption with block-based encoding.
+        </p>
+      </section>
+
+      <section>
+        <h2>Features</h2>
+        <ul>
+          <li>Generates secure prime numbers using <code>sympy</code></li>
+          <li>Implements keypair generation (public and private)</li>
+          <li>Encrypts multi-byte plaintext messages with block splitting</li>
+          <li>Decrypts ciphertext using modular arithmetic</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Sample Flow</h2>
+        <pre><code>Input alphabetic message to encrypt with RSA: hello
+
+p: 130945...
+q: 137201...
+n: 179688...
+z: 179687...
+e: 41273
+d: 146557...
+
+Ciphertext: 735281...
+Plaintext: hello</code></pre>
+      </section>
+
+      <section>
+        <h2>Educational Goals</h2>
+        <p>
+          The goal of this project was to implement RSA from the ground up to learn how modular arithmetic, prime theory, and cryptographic systems interact. Unlike black-box libraries, this version shows how <code>e</code>, <code>d</code>, and <code>n</code> are generated and applied directly.
+        </p>
+      </section>
+
+      <section>
+        <h2>Repository</h2>
+        <p>
+          View the full code and usage instructions here:
+          <a href="https://github.com/zekebranham/RSA_Public-Private-Encryption" target="_blank">RSA-Cryptography on GitHub</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Marlon | Cybersecurity & Research Portfolio</p>
+    </footer>
+  </div>
+</body>
+</html>

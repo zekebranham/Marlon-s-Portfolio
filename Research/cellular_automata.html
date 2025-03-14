@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cellular Automata Research</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+    <nav class="sidebar">
+        <h2>Marlon Branham</h2>
+        <a href="../index.html">About Me</a>
+    
+        <strong>Cybersecurity Defense</strong>
+        <a href="../CybersecurityDefense/multilevel.html">Multi-Level Security</a>
+        <a href="../CybersecurityDefense/windows-server.html">Windows Server Setup</a>
+        <a href="../CybersecurityDefense/splunk.html">Splunk Threat Analysis</a>
+        <a href="../CybersecurityDefense/shell_security.html">Shell Security & Exploits</a>
+        <a href="../CybersecurityDefense/securityplus.html">Security+ Journey</a>
+        <a href="../CybersecurityDefense/wireshark.html">Networking with Wireshark</a>
+    
+        <strong>Research</strong>
+        <a href="../Research/fingerprint.html">Fingerprint Recognition</a>
+        <a href="../Research/rsa.html" class="active">RSA Cryptography</a>
+        <a href="../Research/cellular_automata.html">Cellular Automata</a>
+      </nav>
+    <div class="content">
+        <main>
+            <header>
+                <h1>Cellular Automata: Visual and Interactive Simulations</h1>
+            </header>
+        
+            <div class="section">
+              <h2>Overview</h2>
+              <p>
+                This project explores elementary cellular automata using two complementary approaches: a batch rendering script that generates high-resolution rule evolutions as images, and a graphical user interface (GUI) that lets users input a rule and watch it evolve in real-time.
+              </p>
+            </div>
+        
+            <div class="section">
+              <h2>Implemented Models</h2>
+              <ul>
+                <li><strong>cell10rules.py</strong> — Generates 50+ step rule evolutions (Rules 30, 110, etc.) and outputs them as PNG files using <code>matplotlib</code>.</li>
+                <li><strong>cellular.py</strong> — A Tkinter GUI that allows user input for rule, width, and steps. The simulation animates row-by-row with scroll support and reset options.</li>
+              </ul>
+            </div>
+        
+            <div class="section">
+              <h2>Results and Exploration</h2>
+              <p>By adjusting parameters like grid width and number of steps, the simulations reveal:</p>
+              <ul>
+                <li><strong>Chaotic patterns</strong> (e.g., Rule 30)</li>
+                <li><strong>Complex, structured growth</strong> (e.g., Rule 110)</li>
+                <li><strong>Emergence of order from randomness</strong></li>
+              </ul>
+              <p>Sample output files include:</p>
+              <ul>
+                <li>Rule110.png</li>
+                <li>Rule110_wide.png</li>
+                <li>Rule110_steps500.png</li>
+              </ul>
+            </div>
+        
+            <div class="section">
+              <h2>Research Insight</h2>
+              <p>
+                Elementary cellular automata model how simple binary rules can produce surprisingly intricate behavior. These systems are fundamental to complexity science, showing how computation can emerge from simple units.
+              </p>
+            </div>
+        
+            <div class="section">
+              <h2>Repository</h2>
+              <p>
+                View source code and sample outputs on GitHub:
+                <a href="https://github.com/zekebranham/CellularAutomata" target="_blank">github.com/zekebranham/CellularAutomata</a>
+              </p>
+            </div>
+        </main>
+    <footer>
+      <p>&copy; 2025 Marlon Branham | Cellular Automata Project</p>
+    </footer>
+  
+</div>
+</body>
+</html>
