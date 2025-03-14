@@ -6,7 +6,15 @@
   <title>Marlon Branham | Cyber Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+<script>
+    function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active');
+    document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+}
+</script>  
 <body>
+    <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
   <nav class="sidebar">
     <h2>Marlon Branham</h2>
     <a href="index.html">About Me</a>
@@ -53,9 +61,9 @@
         </p>
 
         <div class="photos">
-          <img src="assets/marlon.jpg" alt="Marlon Headshot" />
+          <img src="assets/marlon.JPG" alt="Marlon Headshot" />
           <img src="assets/arizona.jpg" alt="Arizona Skyline" />
-          <img src="assets/football.jpg" alt="Marlon at the Big House" />
+          <img src="assets/football.JPG" alt="Marlon at the Big House" />
         </div>
       </section>
     </main>

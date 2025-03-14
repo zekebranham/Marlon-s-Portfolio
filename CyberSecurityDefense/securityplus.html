@@ -6,7 +6,15 @@
   <title>CompTIA Security+ Learning Journey</title>
   <link rel="stylesheet" href="../styles.css" />
 </head>
+<script>
+  function toggleSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.toggle('active');
+  document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+}
+</script>  
 <body>
+  <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
   <nav class="sidebar">
     <h2>Marlon Branham</h2>
     <a href="../index.html">About Me</a>
